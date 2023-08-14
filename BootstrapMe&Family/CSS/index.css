@@ -1,0 +1,413 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar starts */
+
+nav {
+  /* border: 1px solid red; */
+  padding: 20px;
+  position: sticky;
+  overflow: hidden;
+  z-index: 3;
+  top: 0px;
+  width: 100%;
+  box-shadow: 2px 0px 30px 10px rgba(225, 219, 219, 0.333);
+  background-color: white;
+  overflow: hidden;
+}
+
+nav ul {
+  /* border: 8px solid green; */
+  display: inline;
+  margin-left: 520px;
+}
+
+nav ul li {
+  /* border: 1px solid yellow; */
+  display: inline;
+}
+
+nav .navbar-brand-logo {
+  margin-left: 90px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #24325d;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 35px;
+  color: #24325d;
+  transition: color 0.5s;
+}
+
+nav ul li a:hover {
+  color: #006fbe;
+}
+.active {
+  color: #006fbe;
+}
+/* navbar ends */
+
+/* Banner starts */
+
+.banner {
+  /* border: 2px solid red; */
+  height: 593px;
+  background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  animation-name: bannerimage;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  margin-top: 20px;
+}
+
+@keyframes bannerimage {
+  0% {
+    background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");
+  }
+  20% {
+    background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");
+  }
+  50% {
+    background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-2.jpg");
+  }
+  100% {
+    background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-3.jpg");
+  }
+}
+/* Banner ends */
+
+/* Family Info starts */
+
+.family-info {
+  /* border: 2px solid red; */
+  margin: 50px 120px;
+}
+.family-info h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.family-info h1::before {
+  content: "";
+  background-color: lightgray;
+  display: block;
+  height: 1px;
+  width: 137px;
+  position: relative;
+  left: 561px;
+  top: 58px;
+}
+.family-info h1::after {
+  content: "";
+  background-color: #006fbe;
+  display: block;
+  height: 3px;
+  width: 54px;
+  position: relative;
+  left: 595px;
+  top: 8px;
+}
+
+.family-info .para {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.family-info .family-info-content {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.family-info .family-info-content .family-image {
+  /* border: 2px solid green; */
+  width: 49%;
+}
+.family-info .family-info-content .family-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.family-info .family-info-content .family-text {
+  /* border: 2px solid yellow; */
+  width: 49%;
+}
+.family-info .family-info-content .family-text ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.family-info .family-info-content .family-text ul li {
+  line-height: 32px;
+  list-style-type: none;
+}
+
+.family-info .family-info-content .family-text .para1 {
+  margin-bottom: 25px;
+}
+.family-info .family-info-content .family-text a {
+  border: 2px solid #006fbe;
+  padding: 9px 34px;
+  color: #006fbe;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.family-info .family-info-content .family-text a:hover {
+  background-color: #006fbe;
+  color: white;
+}
+
+.family-info .fa-check {
+  color: #006fbe;
+}
+
+/* Family Info Ends */
+
+/* Scroll Arrow starts */
+
+.scroll-arrow {
+  background-color: #006fbe;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 987657;
+}
+.scroll-arrow a {
+  color: white;
+  text-decoration: none;
+
+  padding: 12px;
+  font-weight: bold;
+}
+.fa-arrow-up {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+/* Scroll Arrow ends */
+
+/* flex-icon-start  */
+
+.laptop {
+  /* border: 2px solid red; */
+  width: 395px;
+  height: 181px;
+  margin: 100px auto;
+}
+.laptop1 {
+  /* border: 2px solid red; */
+  width: 395px;
+  height: 181px;
+  margin: 100px auto;
+  /* margin-top: -3%; */
+  position: relative;
+  bottom: 120px;
+}
+.fa-laptop,
+.fa-bar-chart,
+.fa-th-large,
+.fa-wifi,
+.fa-camera,
+.fa-th {
+  font-size: 45px;
+  color: #006fbe;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-left: 38%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.laptop a,
+.laptop1 a {
+  text-align: center;
+  color: #444444;
+  display: block;
+  margin: auto;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.laptop p,
+.laptop1 p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 1200px;
+  color: #444444;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+.laptop hr,
+.laptop1 hr {
+  width: 57px;
+  height: 4px;
+  margin-top: 15px;
+  margin-left: 42%;
+  /* display: flex; */
+  background-color: #006fbe;
+  /* margin: auto; */
+}
+.fullicon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  /* border: 1px solid green; */
+  padding: 5px;
+}
+
+/* flex-icon-end  */
+
+/* RECENT PHOTOS START  */
+.recent-photo {
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 200px;
+  margin: 50px auto;
+  position: relative;
+  bottom: 120px;
+  /* z-index: 1222222222222; */
+}
+.recent-photo h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #444444;
+}
+.recent-photo p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+.recent-photo h2::before {
+  content: "";
+  background-color: lightgray;
+  display: block;
+  height: 1px;
+  width: 126px;
+  position: relative;
+  left: 601px;
+  top: 53px;
+}
+.recent-photo h2::after {
+  content: "";
+  background-color: #006fbe;
+  display: block;
+  height: 3px;
+  width: 58px;
+  position: relative;
+  left: 642px;
+  top: 8px;
+}
+/* RECENT PHOTOS END  */
+
+/* Photo Frame start */
+.frame1 {
+  display: flex;
+  /* border: 1px solid red; */
+  /* margin-top: -60px; */
+  position: relative;
+  bottom: 150px;
+  margin-left: 93px;
+  width: 87%;
+}
+.diffimg {
+  width: 210px;
+  height: 170px;
+  margin-left: 43px;
+}
+.frame2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  /* border: 2px solid chocolate; */
+}
+
+/* Photo Frame end */
+
+/* footer start */
+footer {
+  background: #1d284b;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+footer .laborem {
+  font-style: italic;
+}
+.social-link {
+  margin-top: 20px;
+}
+.fa-twitter,
+.fa-facebook,
+.fa-instagram,
+.fa-google-plus,
+.fa-linkedin {
+  font-size: 20px;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  background: #006fbe;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+  margin-bottom: 39px;
+}
+.copyright .family {
+  font-weight: bold;
+}
+.copyright p {
+  margin-bottom: 16px;
+}
+.deignedby span a {
+  color: #006fbe;
+  text-decoration: none;
+}
+/* footer end */
